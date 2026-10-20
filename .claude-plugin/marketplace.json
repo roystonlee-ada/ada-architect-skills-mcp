@@ -1,0 +1,16 @@
+{
+  "name": "ada-architect-mcp",
+  "owner": {
+    "name": "Ada Support"
+  },
+  "metadata": {
+    "description": "Ada Architect skills over the Ada MCP"
+  },
+  "plugins": [
+    {
+      "name": "ada-architect-skills-mcp",
+      "source": "./plugins/ada-architect-skills-mcp",
+      "description": "Design, build, change and diagnose Ada AI Agent use cases using only the Ada MCP server. Works in Claude, ChatGPT and Codex."
+    }
+  ]
+}

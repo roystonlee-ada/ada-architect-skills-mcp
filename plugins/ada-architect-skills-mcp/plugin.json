@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ada-architect-skills-mcp",
+  "version": "2026.10.20",
+  "description": "Design, build, change and diagnose Ada AI Agent use cases using only the Ada MCP server. Works in Claude, ChatGPT and Codex.",
+  "author": {
+    "name": "Ada Support"
+  },
+  "repository": "https://github.com/roystonlee-ada/ada-architect-skills-mcp",
+  "keywords": [
+    "ada",
+    "mcp",
+    "customer-support",
+    "ai-agent"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup-ada-mcp/SKILL.md",
+      "interface": {
+        "displayName": "Ada Architect Skills",
+        "shortDescription": "Design, build and diagnose Ada AI Agent use cases",
+        "longDescription": "Design, build, change and diagnose Ada AI Agent use cases using only the Ada MCP server. Works in Claude, ChatGPT and Codex.",
+        "developerName": "Ada Support",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Set up the Ada MCP, then help me design a new use case for my AI agent."
+        ]
+      }
+    }
+  }
+}
